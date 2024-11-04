@@ -1,0 +1,19 @@
+services:
+  node:
+    image: node
+    build: .
+    container_name: vue-components
+    volumes:
+      - ./project:/project
+    
+    tty: true
+    stdin_open: true
+    
+    restart: "no"
+    
+    working_dir: /project
+    command: ["bash"]
+
+    ports:
+      - 3000:3000
+      - 8000:8000
