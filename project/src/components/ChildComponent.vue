@@ -1,27 +1,19 @@
 <template>
   <div class="child-component">
-    <h3>{{ title }}</h3>
-    <h4>{{ subtitle }}</h4>
-    <p>Le compteur est de : {{ counter }}</p>
-    <button @click="incrementCounter">Incrémenter le compteur</button>
+    <h3>Title</h3>
+    <h4>subtitle</h4>
+    <p>Le compteur est de : ???</p>
+    <button>Incrémenter le compteur</button>
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
 
-const props = defineProps({
-  title: String,
-  subtitle: String,
-})
-
 const counter = ref(0)
-
-const emit = defineEmits(['update-counter'])
 
 function incrementCounter() {
   counter.value++
-  emit('update-counter', counter.value) 
 }
 </script>
 
