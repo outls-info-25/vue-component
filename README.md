@@ -8,7 +8,7 @@ Suivez les étapes ci-dessous pour créer cette application et assimiler les con
 1. **Ajout de props pour le titre et le sous-titre du composant enfant :**
    - Dans `ChildComponent.vue`, ajoutez deux props `title` et `subtitle`.
    - Ces props permettent au composant parent de définir le titre et le sous-titre de chaque enfant.
-   - **Indice** : Utilisez la fonction `defineProps()` de `<script setup>` pour déclarer ces props.
+   - **Indice** : Utilisez la fonction `const props = defineProps()` de `<script setup>` pour déclarer ces props.
 
 2. **Passage de props dans la page parent :**
    - Dans `ParentView.vue`, passez des valeurs différentes pour `title` et `subtitle` de chaque `ChildComponent`.
